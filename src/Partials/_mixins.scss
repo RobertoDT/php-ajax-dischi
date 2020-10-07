@@ -1,0 +1,6 @@
+//header
+@mixin wrapper{
+  width: $wrapperWidth;
+  height: 100%;
+  margin: auto;
+}
