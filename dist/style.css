@@ -28,7 +28,7 @@ header .wrapper .logo-spoti {
 
 main {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #1E2D3B;
 }
 
@@ -41,20 +41,20 @@ main .wrapper {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 50px;
 }
 
 .cards .card {
-  width: calc(100% / 4);
+  width: calc(100% / 5);
   background-color: #2E3A46;
   padding: 15px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .cards .card .disc-img {
   width: 100%;
-  height: 250px;
+  height: 200px;
 }
 
 .cards .card .disc-title {

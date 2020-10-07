@@ -1,18 +1,18 @@
 .cards{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 50px;
 
   .card{
-    width: calc(100% / 4) ;
+    width: calc(100% / 5) ;
     background-color: $secondaryColor;
     padding: 15px;
-    margin: 20px;
+    margin: 10px;
 
     .disc-img{
       width: 100%;
-      height: 250px;
+      height: 200px;
     }
     .disc-title{
       color: white;
