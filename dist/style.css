@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   width: 100%;
   height: 70px;
@@ -37,5 +41,33 @@ main .wrapper {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.cards .card {
+  width: calc(100% / 4);
+  background-color: #2E3A46;
+  padding: 15px;
+  margin: 20px;
+}
+
+.cards .card .disc-img {
+  width: 100%;
+  height: 250px;
+}
+
+.cards .card .disc-title {
+  color: white;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.cards .card .disc-author,
+.cards .card .year {
+  color: darkgrey;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
 }
 

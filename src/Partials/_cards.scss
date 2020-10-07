@@ -1,4 +1,30 @@
 .cards{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+
+  .card{
+    width: calc(100% / 4) ;
+    background-color: $secondaryColor;
+    padding: 15px;
+    margin: 20px;
+
+    .disc-img{
+      width: 100%;
+      height: 250px;
+    }
+    .disc-title{
+      color: white;
+      text-align: center;
+      margin: 15px 0;
+    }
+    .disc-author,
+    .year{
+      color: darkgrey;
+      text-align: center;
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
 }
