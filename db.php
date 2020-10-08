@@ -44,7 +44,7 @@
       'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51rggtPgmRL.jpg'
     ],
     [
-      'title' => '\AND JUSTICE FOR ALL',
+      'title' => "AND JUSTICE FOR ALL",
       'author' => 'Metallica',
       'year' => 1988,
       'poster' => 'https://images-na.ssl-images-amazon.com/images/I/81r3FVfNG3L._SY355_.jpg'

@@ -1,4 +1,5 @@
-<!-- usare ajax -->
+<?php include "db.php" ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -19,16 +20,14 @@
       <div class="wrapper">
         <div class="cards">
 
-          <!-- template -->
-          <script id="disc-template" type="text/x-handlebars-template">
+          <?php foreach ($database as $discs) { ?>
             <div class="card">
-              <img class="disc-img" src="{{poster}}" alt="logo_album">
-              <h2 class="disc-title">{{tile}}</h2>
-              <h4 class="disc-author">{{author}}</h4>
-              <p class="year">{{year}}</p>
+              <img class="disc-img" src="<?php echo $discs["poster"]; ?>" alt="img-dischi">
+              <h2 class="disc-title"><?php echo $discs["title"]; ?></h2>
+              <h4 class="disc-author"><?php echo $discs["author"]; ?></h4>
+              <p class="year"><?php echo $discs["year"]; ?></p>
             </div>
-          </script>
-          <!-- /template -->
+          <?php } ?>
 
         </div>
       </div>
