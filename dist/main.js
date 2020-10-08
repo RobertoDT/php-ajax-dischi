@@ -16092,13 +16092,24 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
 
 $(document).ready(function () {
+  var autore = "?author=";
+
+  if (location.search != "") {
+    //location.search ti restituisce come array tutto quello che c'è dopo l'index.php nell'url (esempio ?author=queen)
+    //con substr(1) dico di togliere il punto interrogativo dall'url
+    //con split divido l'elemento in array in base al simbolo =
+    var url = location.search.substr(1).split("=");
+    autore += url[1];
+  }
+
   $.ajax({
-    "url": "http://localhost/php-ajax-dischi/api.php",
+    "url": "api.php" + autore,
     "method": "GET",
-    "success": function success(data, stato) {
+    "success": function success(data) {
       print(data);
     },
-    "error": function error(richiesta, stato, errori) {
+    "error": function error(errori) {
+      // console.log(JSON.stringify(errori));
       alert("E' avvenuto un errore. " + errori);
     }
   });
